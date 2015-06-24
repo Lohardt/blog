@@ -18,11 +18,11 @@ class LocalWebTestCase extends WebTestCase {
           'version'        => '0.0.0',
           'debug'          => false,
           'mode'           => 'testing',
-          'templates.path' => __DIR__ . '/../app/templates'
+          'templates.path' => PROJECT_ROOT . '/templates'
       ));
 
       // Include our core application file
-      require PROJECT_ROOT . '/app/app.php';
+      require PROJECT_ROOT . '/public/index.php';
       return $app;
     }
 };

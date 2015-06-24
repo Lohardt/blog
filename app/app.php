@@ -12,10 +12,6 @@ if (file_exists(VENDORDIR . "autoload.php")) {
  * Include bootstrap file
  */
 require_once ROOT . 'app' . DS . 'bootstrap.php';
-/**
- * Include bootstrap file
- */
-require_once ROOT . 'app' . DS . 'libs' . DS .'functions.php';
 
 
 /**

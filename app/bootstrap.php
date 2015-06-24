@@ -8,7 +8,7 @@ ini_set('display_errors', 1);
 /**
  * Default timezone
  */
-date_default_timezone_set('Europe/Copenhagen');
+date_default_timezone_set('UTC');
 
 /**
  * Create app
@@ -74,6 +74,6 @@ $app->container->singleton('markdown', function () {
 /**
  * Load all libs
  */
-foreach (glob(ROOT . 'src' . DS . 'libs' . DS . '*.php') as $filename) {
+foreach (glob(ROOT . 'app' . DS . 'libs' . DS . '*.php') as $filename) {
     require_once $filename;
 }
