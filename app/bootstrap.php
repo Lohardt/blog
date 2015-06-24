@@ -38,8 +38,10 @@ if (file_exists(ROOT . 'config' . DS . 'database.config.php')) {
  * Extract settings from db
  */
 $settings = Settings::where('id', '=', 1)->first();
+/*
 $settings->language = "en-US";
 $settings->template = "default";
+*/
 $settings->base_url = $app->request->getUrl() . $app->request->getScriptName();
 
 /**

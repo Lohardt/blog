@@ -17,6 +17,7 @@ class PostMethodTest extends LocalWebTestCase
         $this->assertEquals(200, $this->client->response->status());
         $this->assertSame('Hello William Edwards', $this->client->response->body());
     }
+
 }
 
 /* End of file PostMethodTest.php */

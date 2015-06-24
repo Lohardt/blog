@@ -13,6 +13,12 @@ if (file_exists(VENDORDIR . "autoload.php")) {
  */
 require_once ROOT . 'app' . DS . 'bootstrap.php';
 /**
+ * Include bootstrap file
+ */
+require_once ROOT . 'app' . DS . 'libs' . DS .'functions.php';
+
+
+/**
  * If user is not logged in, he's redirected to login page
  *
  * @param $app
